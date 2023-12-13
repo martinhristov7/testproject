@@ -10,6 +10,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: docker build . -t martinhristov7/testproject
+      - run: docker build . -t martinahristov139/testapp
       - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
       - run: docker push martinhristov7/testproject
